@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Takulog -ぼくのみんなのオススメ-</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesomeのアイコンフォント -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- 自サイトのCSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="top">
+    <header>
+      <a href="https://twitter.com/secret58t"
+        ><i class="fab fa-twitter fa-lg fa-fw icon-color"></i
+      ></a>
+      <a href="https://www.facebook.com/ogiharatakuro"
+        ><i class="fab fa-facebook fa-lg fa-fw icon-color"></i
+      ></a>
+      <a href="https://www.instagram.com/ogiogi.b"
+        ><i class="fab fa-instagram fa-lg fa-fw icon-color"></i
+      ></a>
+    </header>
+    <main>
+      <div class="main-visual">
+        <img src="img/main_visual001.jpg" alt="メイン画像" />
+      </div>
+
+      <nav class="navbar navbar-expand navbar-light bg-light">
+        <!-- メニュー項目 -->
+        <ul class="nav nav-pills flex-column flex-sm-row">
+          <li class="nav-item">
+            <a
+              href="#new"
+              class="flex-sm-fill text-sm-center nav-link active"
+              data-id="all"
+              >全て</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#movie"
+              class="flex-sm-fill text-sm-center nav-link"
+              data-id="movie"
+              >映画</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#photo1"
+              class="flex-sm-fill text-sm-center nav-link"
+              data-id="music"
+              >音楽</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#photo1"
+              class="flex-sm-fill text-sm-center nav-link"
+              data-id="youtube"
+              >Youtube</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#photo1"
+              class="flex-sm-fill text-sm-center nav-link"
+              data-id="store"
+              >店</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#photo1"
+              class="flex-sm-fill text-sm-center nav-link"
+              data-id="blog"
+              >日記</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="tab-content">
+        <div class="tab-pane active">
+          <div class="container center-block mt-4">
+            <!-- 記事表示 -->
+            <div class="article-container">
+              <div id="article-list" class="row"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 記事のテンプレート -->
+      <div id="article-template" style="display: none;">
+        <div class="article-item col-sm-12 col-md-3 mb-3">
+          <div class="card mix filter">
+            <a class="article__url text-decoration-none text-dark">
+              <div class="article-item__image-wrapper p-3">
+                <img
+                  class="article-item__image card-img-top"
+                  id="article_image"
+                  alt="サムネ"
+                />
+              </div>
+              <div class="article-item__detail card-body px-2 py-3">
+                <div
+                  class="article-item__title card-title"
+                  id="article_title"
+                ></div>
+                <div class="article-item__tag"></div>
+                <div class="article-item__date" id="article_date"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-light">
+      <div class="footer-top p-3 mx-auto">
+        <div class="footer-container m-3">
+          <div class="row">
+            <div class="col-md-3 footer-about wow fadeInUp">
+              <img
+                class="logo-footer img-fluid"
+                src="img/logo.png"
+                alt="ロゴ"
+              />
+              <p>
+                &nbsp;&nbsp;タクログでは、僕やみんなのオススメを紹介していきます。<br />
+                &nbsp;&nbsp;ジャンルは問わず、様々なオススメを載せていきます。
+              </p>
+            </div>
+            <div class="col-md-4 offset-md-1 footer-contact wow fadeInDown">
+              <h3>Contact</h3>
+              <p>
+                <i class="fas fa-envelope"></i> Email:
+                <a href="#">ogihara.takuroh@gmail.com</a>
+              </p>
+              <p>
+                <a href="https://twitter.com/secret58t"
+                  ><i class="fab fa-twitter fa-lg fa-fw icon-color"></i
+                ></a>
+                <a href="https://www.facebook.com/ogiharatakuro"
+                  ><i class="fab fa-facebook fa-lg fa-fw icon-color"></i
+                ></a>
+                <a href="https://www.instagram.com/ogiogi.b"
+                  ><i class="fab fa-instagram fa-lg fa-fw icon-color"></i
+                ></a>
+              </p>
+            </div>
+            <div class="col-md-4 footer-links wow fadeInUp">
+              <div class="row">
+                <div class="col">
+                  <h3>Links</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <p><a href="#top">Home</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-copyright">
+              Copyright &copy; Takulog All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Firebaseのセットアップコード（下記のSDKのバージョンは6.2.0） -->
+    <!-- The core Firebase JS SDK is always required and must be listed first 
+    (中心となるFirebase SDKです。常に必要で、最初に記述する必要があります) -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script> -->
+
+    <!-- firebaseで使うサービス -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- popper bootstrapで使用[上記jqueryとセットで記述] -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <!-- bootstrap bootstrapで使用 上記jqueryとセットで記述]-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- fontawesome アイコン -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    ></script>
+
+    <!-- 日付フォーマットライブラリ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+
+    <!-- firebase サーバサイドで使用 -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <!-- flamelink CMSで使用[上記firebaseとセットで記述] -->
+    <script src="https://unpkg.com/flamelink/dist/flamelink.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
