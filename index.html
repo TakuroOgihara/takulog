@@ -2,356 +2,227 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>ポートフォリオ Takuro Ogihara</title>
+    <title>Takulog -ぼくのみんなのオススメ-</title>
     <meta
       name="viewport"
-      content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="css/reset.css" />
-    <!-- Bootstrap CSS
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- HTML要素にクラスを指定するだけでアニメーションを付けてくれるライブラリ -->
-    <link rel="stylesheet" href="css/animate.css" />
-    <!-- Skillのクリックしたら表示する処理 -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesomeのアイコンフォント -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- 自サイトのCSS -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-
-  <body>
-    <!-- welcome操作 -->
-    <div class="welcome-container">
-      <div id="stalker" class="stalker">
-        <div class="circle-text">
-          Takuro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ogihara
-        </div>
-        <span style="color: #ffffff;">Welcome!</span>
-      </div>
-      <div id="overall-color"></div>
-    </div>
+  <body id="top">
     <header>
-      <div class="header-container">
-        <div class="rogo">
-          <img src="img/rogo4.png" alt="ロゴ" />
-        </div>
-        <nav class="global-nav">
-          <ul class="global-nav__list">
-            <li class="global-nav__item"><a href="#about">About</a></li>
-            <li class="global-nav__item"><a href="#work">Work</a></li>
-            <li class="global-nav__item"><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- ハンバーガーメニュー -->
-        <div class="hamburger" id="js-hamburger">
-          <span class="hamburger__line hamburger__line--1"></span>
-          <span class="hamburger__line hamburger__line--2"></span>
-          <span class="hamburger__line hamburger__line--3"></span>
-        </div>
-        <div class="black-bg" id="js-black-bg"></div>
-      </div>
+      <a href="https://twitter.com/secret58t"
+        ><i class="fab fa-twitter fa-lg fa-fw icon-color"></i
+      ></a>
+      <a href="https://www.facebook.com/ogiharatakuro"
+        ><i class="fab fa-facebook fa-lg fa-fw icon-color"></i
+      ></a>
+      <a href="https://www.instagram.com/ogiogi.b"
+        ><i class="fab fa-instagram fa-lg fa-fw icon-color"></i
+      ></a>
     </header>
-
-    <div class="main-visual">
-      <img src="img/main_visual.jpg" alt="メイン画像" />
-    </div>
-
     <main>
-      <div id="about">
-        <h1 class="title">
-          About
-        </h1>
-        <div id="profile">
-          <div id="name_comment">
-            <div id="name_title">
-              <h2>Name</h2>
-              <div id="name">
-                荻原 拓朗
-              </div>
-            </div>
-            <div id="comment">
-              <p>
-                務めていた会社の上司が言った一言<br />
-                「機能的に優れているシステムでも、<br />
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                UIが悪ければユーザは使ってくれない」<br />
-                の言葉が心に響き、サイトのデザインについて興味が湧きました。
-              </p>
-            </div>
-          </div>
-          <div id="myface">
-            <img src="img/myface.png" alt="自分の顔写真" />
-          </div>
-        </div>
+      <div class="main-visual">
+        <img src="img/main_visual001.jpg" alt="メイン画像" />
+      </div>
 
-        <h2>Carrer</h2>
-        <div class="carrer-container">
-          <div class="carrer-vertical-line"></div>
-          <div class="carrer animated">
-            <div class="year_month1">1994年 6月&nbsp;&nbsp;</div>
-            <div class="balloon">
-              <h4>静岡県富士市 出身</h4>
-            </div>
-          </div>
-          <div class="carrer animated">
-            <div class="year_month1">2010年 4月&nbsp;&nbsp;</div>
-            <div class="balloon">
-              <h4>県立富士東高等学校 入学</h4>
-              <p></p>
-            </div>
-          </div>
-          <div class="carrer animated">
-            <div class="year_month1">2013年 4月&nbsp;&nbsp;</div>
-            <div class="balloon">
-              <h4>高知工科大学情報学群 入学</h4>
-            </div>
-          </div>
-          <div class="carrer animated">
-            <div class="year_month1">2018年 4月&nbsp;&nbsp;</div>
-            <div class="balloon">
-              <h4>三菱電機エンジニアリング株式会社 入社</h4>
-              <p>
-                社内SEとしてシステム開発と保守・運用を担当しております。具体的には、社内ユーザへ機能改修についてヒアリングを行い、その結果を要求仕様書に纏め、開発会社に依頼を行う業務（要件定義）です。また、ベンダーからの納品後は、機能テストとリリースを行います。
-              </p>
-            </div>
-          </div>
-          <div class="carrer animated">
-            <div class="year_month1">2020年 4月&nbsp;&nbsp;</div>
-            <div class="balloon">
-              <h4>TechAcademy フロントエンドコース受講</h4>
-              <p>
-                務めていた会社の上司が言った一言「機能的に優れているシステムでも、UIが悪ければユーザは使ってくれない」の言葉が心に響き、サイトのデザインについて興味が湧きました。そして、自分もサイトを作ってみたいと思い、受講しました。
-              </p>
-            </div>
-          </div>
-        </div>
+      <nav class="navbar navbar-expand navbar-light bg-light">
+        <!-- メニュー項目 -->
+        <ul class="nav nav-pills flex-column flex-sm-row">
+          <li class="nav-item">
+            <a
+              href="#new"
+              class="flex-sm-fill text-sm-center nav-link active"
+              data-id="all"
+              >全て</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#movie"
+              class="flex-sm-fill text-sm-center nav-link"
+              data-id="movie"
+              >映画</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#photo1"
+              class="flex-sm-fill text-sm-center nav-link"
+              data-id="music"
+              >音楽</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#photo1"
+              class="flex-sm-fill text-sm-center nav-link"
+              data-id="youtube"
+              >Youtube</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#photo1"
+              class="flex-sm-fill text-sm-center nav-link"
+              data-id="store"
+              >店</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#photo1"
+              class="flex-sm-fill text-sm-center nav-link"
+              data-id="blog"
+              >日記</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-        <h2>Certification</h2>
-        <div class="certification-container">
-          <div class="carrer-vertical-line"></div>
-          <div class="certification animated">
-            <div class="year">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018年&nbsp;&nbsp;
+      <div class="tab-content">
+        <div class="tab-pane active">
+          <div class="container center-block mt-4">
+            <!-- 記事表示 -->
+            <div class="article-container">
+              <div id="article-list" class="row"></div>
             </div>
-            <div class="balloon">
-              <h4>基本情報技術者 取得</h4>
-            </div>
-          </div>
-          <div class="certification animated">
-            <div class="year">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019年&nbsp;&nbsp;
-            </div>
-            <div class="balloon">
-              <h4>HTML5プロフェッショナル認定レベル1 取得</h4>
-              <h4>ウェブデザイン技能検定3級 取得</h4>
-              <h4>Webクリエイター能力認定エキスパート 取得</h4>
-            </div>
-          </div>
-        </div>
-
-        <h2>Skill</h2>
-        <div id="skillcontainer">
-          <div class="webskill" v-on:click="active">
-            <div v-if="!isActive" class="circle1">
-              <span><i class="fas fa-laptop"></i></span>
-            </div>
-            <div v-else class="circle1" id="circle1deco">
-              <span><i class="fas fa-laptop"></i></span>
-            </div>
-          </div>
-          <div v-if="isActive">
-            <div class="skillcircles">
-              <div class="circle2">
-                HTML
-              </div>
-              <div class="circle2">
-                CSS
-              </div>
-              <div class="circle2">
-                JS
-              </div>
-              <br />
-              <div class="circle2">
-                Bootstrap
-              </div>
-              <div class="circle2">
-                Vue
-              </div>
-            </div>
-          </div>
-          <div v-else class="notclick">
-            <p id="pc">左のアイコンをクリック</p>
-            <p id="sp">上のアイコンをタップ</p>
           </div>
         </div>
       </div>
 
-      <div id="work">
-        <h1 class="title">Work</h1>
-        <div class="workcontainer">
-          <div class="work-image">
-            <img
-              src="img/takulog_samnail.png"
-              alt="takulog"
-              class="image-circle"
-            />
+      <!-- 記事のテンプレート -->
+      <div id="article-template" style="display: none;">
+        <div class="article-item col-sm-12 col-md-3 mb-3">
+          <div class="card mix filter">
+            <a class="article__url text-decoration-none text-dark">
+              <div class="article-item__image-wrapper p-3">
+                <img
+                  class="article-item__image card-img-top"
+                  id="article_image"
+                  alt="サムネ"
+                />
+              </div>
+              <div class="article-item__detail card-body px-2 py-3">
+                <div
+                  class="article-item__title card-title"
+                  id="article_title"
+                ></div>
+                <div class="article-item__tag"></div>
+                <div class="article-item__date" id="article_date"></div>
+              </div>
+            </a>
           </div>
-          <div class="work-explanation">
-            <table class="table">
-              <!-- 空白行を入れて位置調整 -->
-              <tr>
-                <th class="text-left"></th>
-                <td class="text-left"></td>
-              </tr>
-              <tr>
-                <th class="text-left">サイト名</th>
-                <td class="text-left">Takulog -タクログ-</td>
-              </tr>
-              <tr>
-                <th class="text-left">制作期間</th>
-                <td class="text-left">2020/05/14～2020/05/31</td>
-              </tr>
-              <tr>
-                <th class="text-left">制作時間</th>
-                <td class="text-left">25時間</td>
-              </tr>
-              <tr>
-                <th class="text-left">使用言語</th>
-                <td class="text-left">
-                  HTML,&nbsp;CSS,&nbsp;JavaScript,&nbsp;jQuery
-                </td>
-              </tr>
-              <tr>
-                <th class="text-left">ツール概要</th>
-                <td class="text-left">
-                  CMS:&nbsp;Flamelink<br />
-                  BaaS:&nbsp;Firebase<br />
-                  <a class="popup" href="img/gaiyo.png">概要図</a>
-                </td>
-              </tr>
-              <tr>
-                <th class="text-left">URL</th>
-                <td class="text-left">
-                  <a href="https://takuroogihara.github.io/takulog/"
-                    >https://takuroogihara.github.io/takulog/</a
-                  >
-                </td>
-              </tr>
-            </table>
-            <!-- 拡大表示用のオーバーレイ -->
-            <div class="overlay">
-              <div class="popup-content"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="workcontainer">
-          <div class="work-image">
-            <img src="img/clothes.png" alt="clothes" class="image-circle" />
-          </div>
-          <div class="work-explanation">
-            <table class="table">
-              <!-- 空白行を入れて位置調整 -->
-              <tr>
-                <th class="text-left"></th>
-                <td class="text-left"></td>
-              </tr>
-              <tr>
-                <th class="text-left">サイト名</th>
-                <td class="text-left">Search Clothes</td>
-              </tr>
-              <tr>
-                <th class="text-left">制作期間</th>
-                <td class="text-left">2020/06/01～2020/06/07</td>
-              </tr>
-              <tr>
-                <th class="text-left">制作時間</th>
-                <td class="text-left">10時間</td>
-              </tr>
-              <tr>
-                <th class="text-left">使用言語</th>
-                <td class="text-left">
-                  HTML,&nbsp;CSS,&nbsp;JavaScript,&nbsp;jQuery
-                </td>
-              </tr>
-              <tr>
-                <th class="text-left">API</th>
-                <td class="text-left">楽天検索</td>
-              </tr>
-              <tr>
-                <th class="text-left">URL</th>
-                <td class="text-left">
-                  <a href="https://takuroogihara.github.io/searchclothes/"
-                    >https://takuroogihara.github.io/searchclothes/</a
-                  >
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div id="contact">
-        <h1 class="title">
-          Contact
-        </h1>
-        <div class="mail">
-          下記の連絡先へお願いします。
-          <table class="contact-table">
-            <tr>
-              <th>
-                電話番号
-              </th>
-              <td>
-                090-1298-8528
-              </td>
-            </tr>
-            <tr>
-              <th>
-                メールアドレス
-              </th>
-              <td>
-                ogihara.takuroh@gmail.com
-              </td>
-            </tr>
-          </table>
         </div>
       </div>
     </main>
-
-    <footer>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <p>Copyright &copy; Takuro Ogihara All Rights Reserved.</p>
+    <footer class="bg-light">
+      <div class="footer-top p-3 mx-auto">
+        <div class="footer-container m-3">
+          <div class="row">
+            <div class="col-md-3 footer-about wow fadeInUp">
+              <img
+                class="logo-footer img-fluid"
+                src="img/logo.png"
+                alt="ロゴ"
+              />
+              <p>
+                &nbsp;&nbsp;タクログでは、僕やみんなのオススメを紹介していきます。<br />
+                &nbsp;&nbsp;ジャンルは問わず、様々なオススメを載せていきます。
+              </p>
+            </div>
+            <div class="col-md-4 offset-md-1 footer-contact wow fadeInDown">
+              <h3>Contact</h3>
+              <p>
+                <i class="fas fa-envelope"></i> Email:
+                <a href="#">ogihara.takuroh@gmail.com</a>
+              </p>
+              <p>
+                <a href="https://twitter.com/secret58t"
+                  ><i class="fab fa-twitter fa-lg fa-fw icon-color"></i
+                ></a>
+                <a href="https://www.facebook.com/ogiharatakuro"
+                  ><i class="fab fa-facebook fa-lg fa-fw icon-color"></i
+                ></a>
+                <a href="https://www.instagram.com/ogiogi.b"
+                  ><i class="fab fa-instagram fa-lg fa-fw icon-color"></i
+                ></a>
+              </p>
+            </div>
+            <div class="col-md-4 footer-links wow fadeInUp">
+              <div class="row">
+                <div class="col">
+                  <h3>Links</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <p><a href="#top">Home</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-copyright">
+              Copyright &copy; Takulog All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <!-- 円のランダム移動 -->
-    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
-    <script src="js/circle_random_move.js"></script>
-    <!-- ハンバーガーメニュー -->
-    <script src="js/humburger.js"></script>
-    <!-- TopのOgiharaTakuroを円状に配置する -->
-    <script src="js/circle_text.js"></script>
+
+    <!-- Firebaseのセットアップコード（下記のSDKのバージョンは6.2.0） -->
+    <!-- The core Firebase JS SDK is always required and must be listed first 
+    (中心となるFirebase SDKです。常に必要で、最初に記述する必要があります) -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script> -->
+
+    <!-- firebaseで使うサービス -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script> -->
+
+    <!-- Optional JavaScript -->
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- 指定したHTML要素が画面内へ入った際に指定した関数を呼び出すライブラリ -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- popper -->
+    <!-- popper bootstrapで使用[上記jqueryとセットで記述] -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <!-- Bootstrap JS -->
+    <!-- bootstrap bootstrapで使用 上記jqueryとセットで記述]-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Font Awesome -->
+
+    <!-- fontawesome アイコン -->
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
     ></script>
-    <!-- welcome操作 -->
-    <script src="js/welcome.js"></script>
-    <!-- 下からふわっと出す -->
+
+    <!-- 日付フォーマットライブラリ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+
+    <!-- firebase サーバサイドで使用 -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <!-- flamelink CMSで使用[上記firebaseとセットで記述] -->
+    <script src="https://unpkg.com/flamelink/dist/flamelink.js"></script>
+
     <script src="js/main.js"></script>
-    <!-- skillのクリック操作 -->
-    <script src="js/tab.js"></script>
-    <!-- ライトボックス -->
-    <script src="js/litebox.js"></script>
   </body>
 </html>
